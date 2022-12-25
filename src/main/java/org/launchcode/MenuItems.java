@@ -7,8 +7,8 @@ public class MenuItems {
   private double price;
   private String description;
   private String category;
-  private boolean isNew;
-  private Date dateCreated;
+  private final boolean isNew;
+  private final Date dateCreated;
 
   public MenuItems(String name, double price, String description, String category) {
     this.name = name;
