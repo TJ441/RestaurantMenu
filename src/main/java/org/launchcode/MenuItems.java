@@ -1,25 +1,51 @@
 package org.launchcode;
+import java.util.Date;
+import java.util.Objects;
 
 public class MenuItems {
-  private String itemName;
+  private String name;
   private double price;
+  private String description;
   private String category;
-  private int daysOnMenu;
+  private boolean isNew;
+  private Date dateCreated;
 
-  public MenuItems(String itemName, double price, String category, int daysOnMenu) {
-    this.itemName = itemName;
+  public MenuItems(String name, double price, String description, String category) {
+    this.name = name;
     this.price = price;
+    this.description = description;
     this.category = category;
-    this.daysOnMenu = daysOnMenu;
+    this.isNew = true;
+    this.dateCreated = new Date();
   }
 
-  public void setItemName(String aItemName) { itemName = aItemName; }
+  public void setItemName(String aName) { name = aName; }
   public void setPrice(double aPrice) { price = aPrice; }
+  public void setDescription(String aDescription) { description = aDescription; }
   public void setCategory(String aCategory) { category = aCategory; }
-  public void setDaysOnMenu(int aDaysOnMenu) { daysOnMenu = aDaysOnMenu; }
+  public boolean isNew() { return isNew; }
 
-  public String getItemName() { return itemName; }
+  public String getName() { return name; }
   public double getPrice() { return price; }
+  public String getDescription() { return description; }
   public String getCategory() { return category; }
-  public int getDaysOnMenu() { return daysOnMenu; }
+  public Date getDateCreated() { return dateCreated; }
+
+  @Override
+  public String toString() {
+    return name + "\n" + description + "\n$" + price;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    MenuItems menuItems = (MenuItems) o;
+    return name.equals(menuItems.name) && category.equals(menuItems.category);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(name, category);
+  }
 }
