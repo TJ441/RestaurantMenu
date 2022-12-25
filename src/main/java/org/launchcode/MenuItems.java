@@ -33,7 +33,7 @@ public class MenuItems {
 
   @Override
   public String toString() {
-    return name + "\n" + description + "\n$" + price;
+    return name + "\n" + description + "\n$" + price + "\n" + category;
   }
 
   @Override

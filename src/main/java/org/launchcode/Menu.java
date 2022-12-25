@@ -1,15 +1,13 @@
 package org.launchcode;
 import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.Date;
 
   public class Menu {
 
     private final Date dateLastUpdated;
-    private final ArrayList<String> categories = new ArrayList<>(
-            Arrays.asList("Appetizer", "Main Course", "Dessert")
-    );
-    private MenuItems special;
+    //private final ArrayList<String> categories = new ArrayList<>(Arrays.asList("Appetizer", "Main Course", "Dessert"));
+    //private MenuItems special;
     private final ArrayList<MenuItems> items;
 
     public Menu(ArrayList<MenuItems> items) {
@@ -17,13 +15,13 @@ import java.util.Date;
       this.dateLastUpdated = new Date();
     }
 
-    public void addCategory(String category) {
-      this.categories.add(category);
-    }
+    //public void addCategory(String category) {
+      //this.categories.add(category);
+    //}
 
-    public void removeCategory(String category) {
-      this.categories.remove(category);
-    }
+    //public void removeCategory(String category) {
+      //this.categories.remove(category);
+    //}
 
     public void addMenuItem(MenuItems item) {
       this.items.add(item);
@@ -33,21 +31,21 @@ import java.util.Date;
       this.items.remove(item);
     }
 
-    public MenuItems getSpecial() {
-      return special;
-    }
+    //public MenuItems getSpecial() {
+      //return special;
+    //}
 
-    public void setSpecial(MenuItems special) {
-      this.special = special;
-    }
+    //public void setSpecial(MenuItems special) {
+      //this.special = special;
+    //}
 
     public Date getDateLastUpdated() {
       return dateLastUpdated;
     }
 
-    public ArrayList<String> getCategories() {
-      return categories;
-    }
+    //public ArrayList<String> getCategories() {
+      //return categories;
+    //}
 
     public ArrayList<MenuItems> getItems() {
       return items;
@@ -60,5 +58,4 @@ import java.util.Date;
         System.out.println("****");
       }
     }
-
   }
