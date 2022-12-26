@@ -19,17 +19,40 @@ public class MenuItems {
     this.dateCreated = new Date();
   }
 
-  public void setName(String aName) { name = aName; }
-  public void setPrice(double aPrice) { price = aPrice; }
-  public void setDescription(String aDescription) { description = aDescription; }
-  public void setCategory(String aCategory) { category = aCategory; }
-  public boolean isNew() { return isNew; }
+  public void setName(String aName) {
+    name = aName;
+  }
+  public String getName() {
+    return name;
+  }
 
-  public String getName() { return name; }
-  public double getPrice() { return price; }
-  public String getDescription() { return description; }
-  public String getCategory() { return category; }
-  public Date getDateCreated() { return dateCreated; }
+  public void setPrice(double aPrice) {
+    price = aPrice;
+  }
+  public double getPrice() {
+    return price;
+  }
+
+  public void setDescription(String aDescription) {
+    description = aDescription;
+  }
+  public String getDescription() {
+    return description;
+  }
+
+  public void setCategory(String aCategory) {
+    category = aCategory;
+  }
+  public String getCategory() {
+    return category;
+  }
+
+  public boolean isNew() {
+    return isNew;
+  }
+  public Date getDateCreated() {
+    return dateCreated;
+  }
 
   @Override
   public String toString() {
