@@ -1,7 +1,6 @@
 package org.launchcode;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Restaurant {
   public static void main(String[] args) {
@@ -11,10 +10,6 @@ public class Restaurant {
     );
     Menu menu = new Menu(menuItems);
     menu.addMenuItem(new MenuItems("Tiramisu",9.50,"Italian dessert","Dessert"));
-
-    Scanner input = new Scanner(System.in);
-    System.out.print("Salad = 0, Chicken Alfredo = 1, Tiramisu = 2\n\nSelect item to print: ");
-    int choice = input.nextInt();
-    menu.printMenuItem(choice);
+    menu.printMenuItem();
   }
 }

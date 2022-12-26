@@ -1,6 +1,7 @@
 package org.launchcode;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Menu {
   private final Date dateLastUpdated;
@@ -40,7 +41,10 @@ public class Menu {
     }
   }
 
-  public void printMenuItem(int choice) {
+  public void printMenuItem() {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Salad = 0, Chicken Alfredo = 1, Tiramisu = 2\n\nSelect item to print: ");
+    int choice = input.nextInt();
     System.out.print(menuItems.get(choice));
   }
 }
