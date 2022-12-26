@@ -4,24 +4,24 @@ import java.util.Date;
 
 public class Menu {
   private final Date dateLastUpdated;
-  private final ArrayList<MenuItems> items;
+  private final ArrayList<MenuItems> menuItems;
 
   public Menu(ArrayList<MenuItems> items) {
-    this.items = items;
+    this.menuItems = items;
     this.dateLastUpdated = new Date();
   }
 
   public void addMenuItem(MenuItems item) {
-    for (MenuItems i : items)
+    for (MenuItems i : menuItems)
       if (i.equals(item)) {
         System.out.print("Item already on menu, not added.");
         return;
       }
-    this.items.add(item);
+    this.menuItems.add(item);
   }
 
   public void removeMenuItem(MenuItems item) {
-    this.items.remove(item);
+    this.menuItems.remove(item);
   }
 
   public Date getDateLastUpdated() {
@@ -29,14 +29,18 @@ public class Menu {
   }
 
   public ArrayList<MenuItems> getItems() {
-    return items;
+    return menuItems;
   }
 
   public void printMenu() {
     System.out.println("****");
-    for (MenuItems menuItem : items) {
+    for (MenuItems menuItem : menuItems) {
       System.out.println(menuItem.toString());
       System.out.println("****");
     }
+  }
+
+  public void printMenuItem(int choice) {
+    System.out.print(menuItems.get(choice));
   }
 }

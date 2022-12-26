@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40efffe5-bf7d-4a9c-ad60-e6796b01c517" name="Changes" comment="Completed Restaurant Menu, added equality tester">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Restaurant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672066544121</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Completed Restaurant Menu, added equality tester">
+      <created>1672066670272</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672066670272</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
