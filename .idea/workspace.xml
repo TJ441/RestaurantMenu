@@ -7,6 +7,7 @@
     <list default="true" id="40efffe5-bf7d-4a9c-ad60-e6796b01c517" name="Changes" comment="Completed Restaurant Menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/MenuItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/MenuItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Restaurant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RunManager">
@@ -124,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671978070671</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Completed Restaurant Menu">
+      <created>1671983550561</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671983550561</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

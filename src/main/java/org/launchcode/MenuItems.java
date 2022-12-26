@@ -19,7 +19,7 @@ public class MenuItems {
     this.dateCreated = new Date();
   }
 
-  public void setItemName(String aName) { name = aName; }
+  public void setName(String aName) { name = aName; }
   public void setPrice(double aPrice) { price = aPrice; }
   public void setDescription(String aDescription) { description = aDescription; }
   public void setCategory(String aCategory) { category = aCategory; }
@@ -33,7 +33,7 @@ public class MenuItems {
 
   @Override
   public String toString() {
-    return name + "\n" + description + "\n$" + price + "\n" + category;
+    return name + "\n" + description + "\n$" + price;
   }
 
   @Override

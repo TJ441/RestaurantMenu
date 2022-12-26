@@ -8,11 +8,9 @@ public class Restaurant {
       new MenuItems("Salad", 8.75, "chicken Caesar salad","Entree"),
       new MenuItems("Chicken Alfredo",18.50,"chicken in a white sauce","Entree"))
     );
-
-    //System.out.print(menuItems.get(1));
-
     Menu menu = new Menu(menuItems);
     menu.addMenuItem(new MenuItems("Tiramisu",9.50,"Italian dessert","Dessert"));
+    menuItems.get(2).setName("tiramisu");
     menu.printMenu();
   }
 }
