@@ -11,6 +11,7 @@ public class Restaurant {
     Menu menu = new Menu(menuItems);
     menu.addMenuItem(new MenuItems("Tiramisu",9.50,"Italian dessert","Dessert"));
     menuItems.get(2).setName("tiramisu");
-    menu.printMenu();
+    System.out.print(menuItems.get(2));
+    //menu.printMenu();
   }
 }
